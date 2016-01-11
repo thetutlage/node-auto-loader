@@ -133,7 +133,7 @@ function Tree (root, children) {
 
     var fpath = [path, child].join('/');
     var ext = extname(child);
-    var name = child.replace(ext, '');
+    var name = child
 
     if (isDirectory(fpath)) {
       root[name] = Tree(fpath, readdir(fpath));
